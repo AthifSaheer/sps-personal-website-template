@@ -686,6 +686,8 @@ article {
   font-size: 32px;
 }
 
+/* @media(max-width:) */
+
 #flexing-blog-div {
   display: flex;
   padding: 30px;
