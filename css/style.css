@@ -1181,10 +1181,17 @@ article {
 }
 
 .service-page .service-parts .block i {
-  font-size: 35px;
-  color: #02bdd5;
+  font-size: 22px;
+  /* color: #02bdd5; */
   text-align:center; 
   width:100%;
+}
+
+#service-icon {
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+  color: #00ba28;
 }
 
 .service-page .service-parts .block p {

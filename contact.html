@@ -122,14 +122,14 @@
                         Do you want any updations on my website or contents you utilize below section.
                     </p>
                     <div class="contact-form">
-                        <form id="contact-form" method="#" action="#" role="form">
+                        <form id="contact-form" method="" action="" role="form">
                 
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                                <input type="text" placeholder="Name" class="form-control" name="name" id="name" >
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" >
+                                <input type="email" placeholder="Email" class="form-control" name="email" id="email" >
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
@@ -141,11 +141,11 @@
                             </div>
                             
                             <div id="success" class="success">
-                                Thank you. The Mailman is on His Way :)
+                                Thank you. The message is on His Way :)
                             </div>
                             
                             <div id="error" class="error">
-                                Sorry, don't know what happened. Try later :(
+                                Sorry, Some error found. Try later :(
                             </div>
                             
                             <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
@@ -241,6 +241,29 @@ Footer Section Start
 
 	<!-- Template Javascript Files
 	================================================== -->
+
+    <!---  Contact Form Submition ----->
+    <script>
+        $("#contact-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycby7aKi4DhP_zcQOWr3yBsjzNEJBYYtnzqRS9t1H/exec",
+                data:$("#contact-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+
+
 	<!-- jquery -->
 	<script src="plugins/jQurey/jquery.min.js"></script>
 	<!-- Form Validation -->
