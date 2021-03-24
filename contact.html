@@ -117,103 +117,83 @@
 <section id="contact-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <div class="block">
                     <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contact Me</h2>
                     <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                         Do you want any updations on my website or contents you utilize below section.
                     </p>
                     <div class="contact-form">
-                        <!-- <form name="submit-form" id="g-form" method="" action="" role="form">
-                
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                <input type="text" placeholder="Name" class="form-control" name="name" id="name" >
-                            </div>
-                            
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                <input type="email" placeholder="Email" class="form-control" name="email" id="email" >
-                            </div>
-                            
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-                            </div>
-                            
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>    
-                            </div>
-                            
-                            <div id="success" class="success">
-                                Thank you. The message is on His Way :)
-                            </div>
-                            
-                            <div id="error" class="error">
-                                Sorry, Some error found. Try later :(
-                            </div>
-                            
-                            <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
-                                <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
-                            </div>                      
-                        </form> -->
+                        <form name="submit-form" id="gform" action="">
 
-                        <form name="submit-form" id="gform" class="col-12 col-md-6" action="">
-                            <div class="form-group">
+                            <div class="form-group wow fadeInDown">
                                 <label for="formGroupExampleInput">First Name</label>
                                 <input name="firstname" id="first-name-id" onblur="firstName()" type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name" required pattern="[A-Za-z]+">
                                 <div class="d-flex">
-                                    <small id="fname-warng-txt-letters" class="form-text text-danger p-2">You must include a-z A-Z</small>
-                                    <small id="fname-warng-txt-number" class="form-text text-danger p-2">Don't validate 0-9</small>
-                                    <small id="fname-warng-txt-required" class="form-text text-danger p-2">This field is required</small>
+                                    <small id="fname-warng-txt-letters" class="form-text text-danger p-2">You must include a-z A-Z 
+                                        <span id="fname-warng-txt-number" class="form-text text-danger p-2">Don't validate 0-9</span>
+                                        <span id="fname-warng-txt-required" class="form-text text-danger p-2">This field is required</span>
+                                    </small>
                                 </div>
                             </div>
     
-                            <div class="form-group">
+                            <div class="form-group wow fadeInDown">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input name="email" type="email" class="form-control" id="exampleInputEmail1" onblur="emailForm()" aria-describedby="emailHelp" required placeholder="Email">
                                 <div class="d-flex">
-                                    <small id="email-warng-txt" class="form-text text-danger p-2">Enter valid Email</small>
-                                    <small id="email-warng-txt-required" class="form-text text-danger p-2">This field is required</small>
+                                    <small id="email-warng-txt" class="form-text text-danger p-2">Enter valid Email
+                                        <spa id="email-warng-txt-required" class="form-text text-danger p-2">This field is required</span>
+                                    </small>
                                 </div>
                             </div>
     
-                            <div class="form-group">
+                            <div class="form-group wow fadeInDown">
                                 <label for="exampleFormControlTextarea1">Message</label>
                                 <textarea name="message" onblur="messageForm()" class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3" required pattern="[A-Za-z0-9]+"></textarea>
                                 <small id="messg-wrng-txt" class="form-text text-danger">This field is required</small>
                             </div>
-                            <input id="submit-button" name="btn" type="submit" class="btn btn-outline-info btn-block"></input>
+                            <input id="submit-button" onclick="btnClick()" name="btn" type="submit" class="btn btn-outline-info btn-block"></input>
                         </form>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 col-8">
                  <div class="map-area">
                     <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Find Me</h2>
                     <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
-                        This is my exact location.
+                        Do you want reach me. This is my exact location.🤞
                         
                     </p>
                     <div class="map">
-                        <div class="mapouter" style="@media(max-width:630px){.map iframe{width:200px;}} "><div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=nilambur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.online-timer.net"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:600px;}</style></div></div>
+                        <div class="mapouter" style="@media(max-width:630px){.map iframe{width:200px;}}">
+                            <div class="gmap_canvas">
+                                <iframe width="450" height="380" id="gmap_canvas" src="https://maps.google.com/maps?q=nilambur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://www.online-timer.net"></a><br>
+                                <style>.mapouter{position:relative;text-align:right;height:380px;width:450px;}</style>
+                                <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                                <style>.gmap_canvas {overflow:hidden;background:none!important;height:380px;width:450px;}</style>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row address-details">
-            <div class="col-md-4">
-                <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
+            <div class="col-md-4 col-12">
+                <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".2s">
                     <i class="ion-ios-location-outline"></i>
                     <h5>Nilambur, Malappuram <br>Kerala, 679334</h5>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+            <div class="col-md-4 col-12">
+                <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".4s">
                     <i class="ion-ios-email-outline"></i>
                     <p>liteboook@gmail.com <br> waterloodot@gmail.com</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+            <div class="col-md-4 col-12">
+                <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".6s">
                     <i class="ion-ios-telephone-outline"></i>
                     <p>+91 8157 9762 16 <br> +91 9021 1000 109</p>
                 </div>
@@ -230,10 +210,10 @@ Footer Section Start
 <footer id="footer">
     <div class="container">
         <div class="col-md-8">
-            <p class="copyright">Copyright: <span><script>document.write(new Date().getFullYear())</script></span> Design and Developed by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>. <br> 
-                Get More 
-                <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">
-                    Free Bootstrap Templates
+            <p class="copyright">Copyright: <span style="font-weight: bold;">Athif Saheer</span><br> 
+                Design and Developed by
+                <a href="https://athifsaheer.github.io/MyOgWeb/" target="_blank">
+                    Waterloocreations
                 </a>
             </p>
         </div>
