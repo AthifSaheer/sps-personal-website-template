@@ -686,12 +686,6 @@ article {
   font-size: 32px;
 }
 
-/* @media(max-width:) */
-
-#flexing-blog-div {
-  display: flex;
-  padding: 30px;
-}
 
 .blog-content .blog-meta {
   color: #9a9a9a;
@@ -1558,4 +1552,29 @@ px      68    160    252    344    436    */
   top: 0;
   background: #fff;
   border: 2px solid #34b7a7;
+}
+
+
+/*--------------------------------------------------------------
+# Contact form
+--------------------------------------------------------------*/
+
+#fname-warng-txt-letters {
+  visibility: hidden;
+}
+
+#fname-warng-txt-number {
+  visibility: hidden;
+}
+#fname-warng-txt-required{
+  visibility: hidden;
+} 
+#email-warng-txt {
+  visibility: hidden;
+}
+#email-warng-txt-required {
+  visibility: hidden;
+}
+#messg-wrng-txt{
+  visibility: hidden;
 }
