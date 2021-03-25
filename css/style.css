@@ -704,6 +704,9 @@ article {
 
 .blog-content .blog-meta p {
   margin-top: 20px;
+}
+
+#artcl-txt {
   text-align: justify;
 }
 
