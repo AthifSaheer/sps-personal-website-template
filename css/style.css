@@ -1459,6 +1459,7 @@ px      68    160    252    344    436    */
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
   font-size: 17px;
+  text-align: justify;
 }
 
 #about-icons span {
@@ -1531,6 +1532,10 @@ px      68    160    252    344    436    */
   font-weight: 600;
   margin-bottom: 10px;
   color: #34b7a7;
+}
+
+.resume .resume-item p {
+  text-align: justify;
 }
 
 .resume .resume-item ul {
